@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+
+<html lang="fr">
+
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AB Graphisme - Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <header>
+    <div class="header-container">
+ 
+      <video 
+       autoplay 
+       muted 
+       loop 
+       playsinline 
+       class="logo-animation"
+       poster="logo/logo.svg"
+      >
+       <source src="assets/video/animation-logo.webm" type="video/webm">
+       <source src="assets/video/logo-animation.mov" type="video/quicktime">
+       <img src="assets/logo/logo.svg" alt="Logo AB Graphisme">
+
+      </video>
+
+      <p class="tagline">Identité visuelle – Affiches – Webdesign – Packaging</p>
+      
+    </div>
+
+    <div class="theme-options">
+  
+<span class="theme-option" id="force-dark">Dark</span> /
+<span class="theme-option" id="force-light">Light</span>
+
+<script>
+const btnDark = document.getElementById('force-dark');
+const btnLight = document.getElementById('force-light');
+const btnSystem = document.getElementById('force-system');
+
+btnDark.addEventListener('click', () => {
+  document.body.classList.add('force-dark');
+  document.body.classList.remove('force-light');
+});
+
+btnLight.addEventListener('click', () => {
+  document.body.classList.add('force-light');
+  document.body.classList.remove('force-dark');
+});
+</script>
+
+  </header>
+
+  <nav>
+    <div class="nav-container">
+      <ul>
+        <li><a href="#projets">MES PROJETS</a></li>
+        <li><a href="#apropos">À PROPOS DE MOI</a></li>
+        <li><a href="#competences">MES COMPÉTENCES</a></li>
+        <li><a href="#contact">MES CONTACTS</a></li>
+      </ul>
+    </div>
+  </nav>
+
+    <section id="projets">
+
+      <div class="projets-grid">
+        <a href="#img1"><img src="assets/images/projet-un.jpeg" alt="Projet 1"></a>
+        <a href="#img2"><img src="assets/images/projet-deux.png" alt="Projet 2"></a>
+        <a href="#img3"><img src="assets/images/projet-trois.jpeg" alt="Projet 3"></a>
+        <a href="#img4"><img src="assets/images/projet-quatre.jpeg" alt="Projet 4"></a>
+        <a href="#img5"><img src="assets/images/projet-cinq.png" alt="Projet 5"></a>
+        <a href="#img6"><img src="assets/images/projet-six.jpeg" alt="Projet 6"></a>
+      </div>
+
+      <div class="lightbox" id="img1">
+        <a href="#!" class="close">×</a>
+        <img src="assets/images/projet-un.jpeg" alt="">
+      </div>
+
+      <div class="lightbox" id="img2">
+        <a href="#!" class="close">×</a>
+        <img src="assets/images/projet-deux.png" alt="">
+      </div>
+
+      <div class="lightbox" id="img3">
+        <a href="#!" class="close">×</a>
+        <img src="assets/images/projet-trois.jpeg" alt="">
+      </div>
+
+      <div class="lightbox" id="img4">
+        <a href="#!" class="close">×</a>
+        <img src="assets/images/projet-quatre.jpeg" alt="">
+      </div>
+
+      <div class="lightbox" id="img5">
+        <a href="#!" class="close">×</a>
+        <img src="assets/images/projet-cinq.png" alt="">
+      </div>
+
+      <div class="lightbox" id="img6">
+        <a href="#!" class="close">×</a>
+        <img src="assets/images/projet-six.jpeg" alt="">
+      </div>
+
+    </section>
+
+    <section id="apropos">
+      <div class="contenu">
+        <p>
+          Je m'appelle Alizée, j'ai 22 ans et je suis étudiante en arts graphiques, option infographie, à Condorcet (Saint-Ghislain).
+          Passionnée par l’univers créatif du numérique, j’aime donner vie à mes idées et transmettre des émotions à travers différents visuels.
+          Au cours de ma formation, j’ai été amenée à sortir de ma zone de confort en découvrant d’autres techniques comme l’aquarelle, la gouache ou la sérigraphie. Cela m’a permis d’explorer de nombreux outils, du dessin traditionnel au codage, même si mon intérêt principal reste l’infographie et le digital.
+          Je trouve mon inspiration dans ce qui m’entoure : photos, magazines, montages vidéo, ou encore visuels repérés sur Pinterest. J'aime aussi capturer des détails lors de balades qui éveillent ma créativité.
+        </p>
+      </div> 
+    </section>
+
+    <section id="competences">
+      <div class="competences-container">
+
+        <div class="personnalite">
+          <p>
+            Personnalité :<br>
+            franche, motivée, sérieuse, autonome & autodidacte, <br>
+            avec une énergie positive en équipe
+          </p>
+        </div>
+
+        <div class="logiciels">
+          <img src="assets/logo/logiciels.svg" alt="Adobe Illustrator">
+        </div>
+
+        <div class="langues">
+          <img src="assets/logo/langues.png" alt="Compétences linguistiques : Français, Anglais, Néerlandais">
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="contact-container">
+
+       <div class="contact-infos">
+        <div class="contact-item mail">
+          <img src="assets/logo/mail.svg" alt="Email">
+          <p>buronalizee@gmail.com</p>
+        </div>
+
+        <div class="contact-item telephone">
+          <img src="assets/logo/telephone.svg" alt="Téléphone">
+          <p>+32 499/991234</p>
+        </div>
+
+        <a class="contact-item linkedin"
+          href="https://www.linkedin.com/in/alizée-buron-a25257264/"
+          target="_blank">
+          <img src="assets/logo/linkedin.svg" alt="LinkedIn">
+          <p>Alizée Buron</p>
+        </a>
+      </div>
+      
+    <form 
+      class="contact-form" 
+      action="mailto:buronalizee@gmail.com?subject=Contact depuis mon portfolio" 
+      method="POST" 
+      enctype="text/plain"
+    >
+      <h2>Me contacter</h2>
+
+      <label for="nom">Nom</label>
+      <input type="text" id="nom" name="nom" placeholder="Votre nom" required>
+
+      <label for="email">Adresse e-mail</label>
+      <input type="email" id="email" name="email" placeholder="Votre adresse e-mail" required>
+
+      <label for="message">Message</label>
+      <textarea id="message" name="message" rows="4" placeholder="Votre message" required></textarea>
+
+      <button type="submit">Envoyer</button>
+    </form>
+  </div>
+</section>
+
+  <footer>
+    <div class="footer-container">
+      <div class="footer-menu">
+        <p>MENU</p>
+        <ul>
+          <li><a href="#projets">MES PROJETS</a></li>
+          <li><a href="#apropos">A PROPOS DE MOI</a></li>
+          <li><a href="#competences">MES COMPÉTENCES</a></li>
+          <li><a href="#contact">MES CONTACTS</a></li>
+        </ul>
+      </div>
+      <div class="footer-logo">
+        <img src="logo/logo-copyright.svg" alt="Logo AB Graphisme">
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
