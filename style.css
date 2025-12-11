@@ -637,7 +637,7 @@ footer {
      ========================== */
   #apropos {
     height: auto;
-    padding: 3rem 3rem;
+    padding: 3rem 3;
   }
 
   #apropos .contenu p {
