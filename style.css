@@ -170,7 +170,7 @@ ul {
    HEADER
    ============================== */
 header {
-  background-image: url("images/fond.jpg");
+  background-image: url("assets/images/fond.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
